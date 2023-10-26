@@ -10,6 +10,7 @@ import AnalogClockUI from "../AnalogClockUI";
 import CommentsBoxUI from "../CommentsBoxUI";
 import ProgressBarUI from "../ProgressBarUI";
 import RatingsUI from "../RatingsUI";
+import StopwatchUI from "../StopwatchUI";
 interface ComponentInterface {
   id: number;
   name: string;
@@ -21,6 +22,7 @@ const data = [
   { id: 3, name: "Comments Box", component: CommentsBoxUI },
   { id: 4, name: "Progress Bar", component: ProgressBarUI },
   { id: 5, name: "Ratings", component: RatingsUI },
+  { id: 6, name: "Stop Watch", component: StopwatchUI },
 ];
 const AppUI = () => {
   const [selectedComponent, setSelectedComponent] = useState({
