@@ -21,3 +21,9 @@ export const StarIcon = styled(AiFillStar).attrs((props) => {
     transform: ${({ isEditable }) => (isEditable ? "scale(1.25)" : "unset")};
   }
 `;
+export const StarRatingsTitle = styled.p`
+  font-size: 24px;
+  color: #262626;
+  font-weight: 600;
+  text-align: center;
+`;

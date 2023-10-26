@@ -1,5 +1,9 @@
 import { useState } from "react";
-import { AccordianBox, AccordianContainer } from "./Accordian.styles";
+import {
+  AccordianBox,
+  AccordianContainer,
+  AccordianTitle,
+} from "./Accordian.styles";
 
 export interface AccordianDataProps {
   id: string;
@@ -21,6 +25,7 @@ const Accordian: React.FC<AccordianProps> = ({ data: accordianData }) => {
   };
   return (
     <AccordianContainer>
+      <AccordianTitle>Accordian</AccordianTitle>
       {accordianData.map((data) => (
         <AccordianBox
           {...data}

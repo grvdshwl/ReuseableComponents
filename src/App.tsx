@@ -1,16 +1,9 @@
 import "./App.css";
-import AccordianUI from "./UI/AccordianUI";
-import { AppWrapper } from "./UI/AppUI/App.styles";
+
+import AppUI from "./UI/AppUI";
 
 function App() {
-  return (
-    <AppWrapper>
-      {/* <RatingsUI />
-      <ProgressBarUI />
-      <CommentsBoxUI /> */}
-      <AccordianUI />
-    </AppWrapper>
-  );
+  return <AppUI />;
 }
 
 export default App;

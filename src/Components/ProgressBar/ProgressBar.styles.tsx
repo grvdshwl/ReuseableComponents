@@ -30,3 +30,16 @@ export const ProgressBarFill = styled.div<ProgressBarFillProps>`
   width: ${({ progress }) => `${progress}%`};
   animation: ${({ progress }) => fillAnimation(progress)} 2s ease-in-out;
 `;
+
+export const ProgressBarTitle = styled.p`
+  font-size: 24px;
+  color: #262626;
+  font-weight: 600;
+  text-align: center;
+`;
+
+export const ProgressBarWrapper = styled.p`
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+`;

@@ -3,6 +3,7 @@ import {
   StarIcon,
   StarRatingsContainer,
   StarRatingsMainContainer,
+  StarRatingsTitle,
 } from "./StarRatings.styles";
 
 interface StarRatingsProps {
@@ -45,6 +46,7 @@ const StarRatings: React.FC<StarRatingsProps> = (props) => {
   const starsArray = new Array(totalRatings).fill("");
   return (
     <StarRatingsContainer>
+      <StarRatingsTitle>Star Ratings</StarRatingsTitle>
       <StarRatingsMainContainer>
         {starsArray.map((_, index: number) => {
           const rating = index + 1;

@@ -7,7 +7,7 @@ export const AccordianContainer = styled.div`
   display: flex;
   flex-direction: column;
   gap: 12px;
-  width: 850px;
+  width: 650px;
 `;
 
 export const AccordianBoxContainer = styled.div`
@@ -55,6 +55,13 @@ export const AccordianBoxSecondaryDescription = styled.p`
   font-size: 14px;
   color: #262626;
   text-align: justify;
+`;
+
+export const AccordianTitle = styled.p`
+  font-size: 24px;
+  color: #262626;
+  font-weight: 600;
+  text-align: center;
 `;
 
 interface AccordianBoxProps extends AccordianDataProps {

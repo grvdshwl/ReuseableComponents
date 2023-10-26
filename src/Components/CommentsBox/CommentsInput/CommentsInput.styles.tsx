@@ -6,7 +6,7 @@ export const CommentsInputContainer = styled.form`
   gap: 20px;
 `;
 export const CommentsInputTitle = styled.p`
-  font-size: 20px;
+  font-size: 24px;
   color: #262626;
   font-weight: 600;
 `;

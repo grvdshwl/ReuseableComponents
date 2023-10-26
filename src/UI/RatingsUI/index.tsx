@@ -11,7 +11,7 @@ const RatingsUI = () => {
   return (
     <>
       <StarRatings
-        starSize="32px"
+        starSize="42px"
         value={rating}
         onChange={handleChange}
         edit={true}
