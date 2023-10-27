@@ -10,7 +10,7 @@ export const AppWrapper = styled.div`
 `;
 
 export const AppWrapperNavigation = styled.div`
-  width: 250px;
+  width: 300px;
   min-height: 100vh;
   display: flex;
   flex-direction: column;

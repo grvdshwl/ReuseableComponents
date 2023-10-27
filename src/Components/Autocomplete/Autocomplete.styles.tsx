@@ -23,7 +23,7 @@ export const AutocompleteInput = styled.input`
 export const AutocompleteInputIcon = styled(BsSearch)`
   width: 16px;
   height: 16px;
-  color: #d3d3d3;
+  color: #262626;
 `;
 
 export const AutocompleteMainContainer = styled.div`

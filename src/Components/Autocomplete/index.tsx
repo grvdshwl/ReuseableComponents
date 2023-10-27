@@ -36,15 +36,11 @@ const Autocomplete: React.FC = () => {
   const [isLoading, setIsLoading] = useState(false);
 
   useEffect(() => {
-    if (isFocused || !input) {
-      setIsLoading(true);
-
-      const result = findCityNames(input);
-      setTimeout(() => {
-        setResults(result);
-        setIsLoading(false);
-      }, 500);
-    }
+    const result = findCityNames(input);
+    setTimeout(() => {
+      setResults(result);
+      setIsLoading(false);
+    }, 500);
   }, [input]);
 
   useEffect(() => {
@@ -67,12 +63,13 @@ const Autocomplete: React.FC = () => {
 
   return (
     <AutocompleteContainer>
-      <AutocompleteTitle>Autocomplete</AutocompleteTitle>
+      <AutocompleteTitle>Autocomplete Input</AutocompleteTitle>
       <AutocompleteMainContainer className="main">
         <AutocompleteInputContainer>
           <AutocompleteInput
             placeholder="Enter here"
             onChange={(e) => {
+              setIsLoading(true);
               setInput(e.target.value);
             }}
             value={input}
