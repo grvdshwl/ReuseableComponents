@@ -1,4 +1,4 @@
-import { useState } from "react";
+import React, { useState } from "react";
 import {
   AppUIComponentWrapper,
   AppWrapper,
@@ -12,6 +12,7 @@ import ProgressBarUI from "../ProgressBarUI";
 import RatingsUI from "../RatingsUI";
 import StopwatchUI from "../StopwatchUI";
 import AutocompleteUI from "../AutocompleteUI";
+import TodoListUI from "../ToDoListUI";
 interface ComponentInterface {
   id: number;
   name: string;
@@ -25,6 +26,7 @@ const data = [
   { id: 5, name: "Ratings", component: RatingsUI },
   { id: 6, name: "Stop Watch", component: StopwatchUI },
   { id: 7, name: "Autocomplete Input", component: AutocompleteUI },
+  { id: 8, name: "Todo List", component: TodoListUI },
 ];
 const AppUI = () => {
   const [selectedComponent, setSelectedComponent] = useState({
@@ -49,7 +51,7 @@ const AppUI = () => {
         ))}
       </AppWrapperNavigation>
       <AppUIComponentWrapper>
-        {<selectedComponent.component />}
+        {React.createElement(selectedComponent.component)}
       </AppUIComponentWrapper>
     </AppWrapper>
   );
