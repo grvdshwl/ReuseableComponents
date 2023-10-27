@@ -1,4 +1,4 @@
-import { ChangeEvent, FormEvent, FormEventHandler, useState } from "react";
+import { ChangeEvent, FormEvent, useState } from "react";
 import {
   TodoListButton,
   TodoListContainer,
@@ -8,7 +8,7 @@ import {
   TodoListMainContainer,
   TodoListNoItem,
   TodoListTitle,
-} from "./ToDoList.styles";
+} from "./TodoList.styles";
 
 const TodoList = () => {
   const [input, setInput] = useState("");
