@@ -11,6 +11,7 @@ import CommentsBoxUI from "../CommentsBoxUI";
 import ProgressBarUI from "../ProgressBarUI";
 import RatingsUI from "../RatingsUI";
 import StopwatchUI from "../StopwatchUI";
+import AutocompleteUI from "../AutocompleteUI";
 interface ComponentInterface {
   id: number;
   name: string;
@@ -23,6 +24,7 @@ const data = [
   { id: 4, name: "Progress Bar", component: ProgressBarUI },
   { id: 5, name: "Ratings", component: RatingsUI },
   { id: 6, name: "Stop Watch", component: StopwatchUI },
+  { id: 7, name: "Autocomplete Input", component: AutocompleteUI },
 ];
 const AppUI = () => {
   const [selectedComponent, setSelectedComponent] = useState({

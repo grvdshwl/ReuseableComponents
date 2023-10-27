@@ -56,8 +56,8 @@ export const AnalogClockNumberMain: React.FC<{
 `;
 
 export const AnalogClockCentre = styled.div`
-  width: 14px;
-  height: 14px;
+  width: 18px;
+  height: 18px;
   position: absolute;
   background: #212529;
   z-index: 5;

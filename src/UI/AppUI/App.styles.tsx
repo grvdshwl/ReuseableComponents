@@ -43,3 +43,21 @@ export const AppUIComponentWrapper = styled.div`
   margin-top: 50px;
   justify-content: center;
 `;
+
+export const Loader = styled.div`
+  border: 2px solid #262626;
+  border-top: 4px solid transparent;
+  border-radius: 50%;
+  width: 16px;
+  height: 16px;
+  animation: spin 1s linear infinite;
+
+  @keyframes spin {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+`;
