@@ -13,6 +13,7 @@ import RatingsUI from "../RatingsUI";
 import StopwatchUI from "../StopwatchUI";
 import AutocompleteUI from "../AutocompleteUI";
 import TodoListUI from "../ToDoListUI";
+import PollWidgetUI from "../PollWidgetUI";
 interface ComponentInterface {
   id: number;
   name: string;
@@ -27,6 +28,7 @@ const data = [
   { id: 6, name: "Stop Watch", component: StopwatchUI },
   { id: 7, name: "Autocomplete Input", component: AutocompleteUI },
   { id: 8, name: "Todo List", component: TodoListUI },
+  { id: 9, name: "Poll Widget", component: PollWidgetUI },
 ];
 const AppUI = () => {
   const [selectedComponent, setSelectedComponent] = useState({

@@ -15,7 +15,7 @@ interface ProgressBarContainerProps {
 }
 export const ProgressBarContainer = styled.div<ProgressBarContainerProps>`
   width: ${({ width }) => `${width}`};
-  background-color: #d4d4d4;
+  background-color: #f1f3f5;
   height: ${({ height }) => `${height}`};
   border-radius: ${({ height }) => `${height}`};
   overflow: hidden;
@@ -23,12 +23,14 @@ export const ProgressBarContainer = styled.div<ProgressBarContainerProps>`
 interface ProgressBarFillProps {
   progress: number;
   barColor: string;
+  animate: boolean;
 }
 export const ProgressBarFill = styled.div<ProgressBarFillProps>`
   height: 100%;
-  background-color: ${({ barColor }) => `${barColor}`};
+  background-color: ${({ barColor }) => barColor};
   width: ${({ progress }) => `${progress}%`};
-  animation: ${({ progress }) => fillAnimation(progress)} 2s ease-in-out;
+  animation: ${({ progress, animate }) => animate && fillAnimation(progress)} 2s
+    ease-in-out none;
 `;
 
 export const ProgressBarTitle = styled.p`

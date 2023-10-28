@@ -9,6 +9,7 @@ interface ProgressBarProps {
   barColor?: string;
   barWidth?: string;
   barHeight?: string;
+  animate?: boolean;
 }
 const ProgressBar: React.FC<ProgressBarProps> = (props) => {
   const {
@@ -16,14 +17,16 @@ const ProgressBar: React.FC<ProgressBarProps> = (props) => {
     barColor = "#4bc6b9",
     barWidth = "400px",
     barHeight = "10px",
+    animate = true,
   } = props;
   return (
-    <ProgressBarWrapper>
-      <ProgressBarTitle>Progress Bar</ProgressBarTitle>
-      <ProgressBarContainer width={barWidth} height={barHeight}>
-        <ProgressBarFill progress={progress} barColor={barColor} />
-      </ProgressBarContainer>
-    </ProgressBarWrapper>
+    <ProgressBarContainer width={barWidth} height={barHeight}>
+      <ProgressBarFill
+        progress={progress}
+        barColor={barColor}
+        animate={animate}
+      />
+    </ProgressBarContainer>
   );
 };
 

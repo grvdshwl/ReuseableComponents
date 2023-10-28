@@ -37,4 +37,86 @@ export const cityData =[
     "Shimoga", "Rae Bareli", "Agartala",
     // Continue the list...
   ]
-  
+
+ export const mockUserData =    [
+      {
+        "id": "1",
+        "full_name": "John Doe"
+      },
+      {
+        "id": "2",
+        "full_name": "Jane Smith"
+      },
+      {
+        "id": "3",
+        "full_name": "Robert Johnson"
+      },
+      {
+        "id": "4",
+        "full_name": "Sarah Williams"
+      },
+      {
+        "id": "5",
+        "full_name": "Michael Brown"
+      },
+      {
+        "id": "6",
+        "full_name": "Emily Davis"
+      },
+      {
+        "id": "7",
+        "full_name": "William Jones"
+      },
+      {
+        "id": "8",
+        "full_name": "Olivia Lee"
+      },
+      {
+        "id": "9",
+        "full_name": "James Garcia"
+      },
+      {
+        "id": "10",
+        "full_name": "Sophia Hernandez"
+      },
+      {
+        "id": "11",
+        "full_name": "Daniel Martinez"
+      },
+      {
+        "id": "12",
+        "full_name": "Ava Gonzales"
+      },
+      {
+        "id": "13",
+        "full_name": "Ethan Lopez"
+      },
+      {
+        "id": "14",
+        "full_name": "Isabella Perez"
+      },
+      {
+        "id": "15",
+        "full_name": "Alexander Wilson"
+      },
+      {
+        "id": "16",
+        "full_name": "Mia Scott"
+      },
+      {
+        "id": "17",
+        "full_name": "Matthew Turner"
+      },
+      {
+        "id": "18",
+        "full_name": "Chloe Mitchell"
+      },
+      {
+        "id": "19",
+        "full_name": "David Hall"
+      },
+      {
+        "id": "20",
+        "full_name": "Lily Adams"
+      }
+    ]
