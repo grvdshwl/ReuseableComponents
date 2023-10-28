@@ -1,9 +1,4 @@
-import {
-  ProgressBarContainer,
-  ProgressBarFill,
-  ProgressBarTitle,
-  ProgressBarWrapper,
-} from "./ProgressBar.styles";
+import { ProgressBarContainer, ProgressBarFill } from "./ProgressBar.styles";
 interface ProgressBarProps {
   progress: number;
   barColor?: string;
