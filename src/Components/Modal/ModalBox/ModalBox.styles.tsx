@@ -9,6 +9,8 @@ export const ModalBoxContainer = styled.div`
   max-width: 100%;
   max-height: 60%;
   z-index: 1001;
+  min-width: 300px;
+  min-height: 200px;
   transform: translate(-50%, -50%);
   @media (max-width: 600px) {
     max-width: 95%;

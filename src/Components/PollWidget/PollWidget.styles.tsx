@@ -132,7 +132,7 @@ export const PollWidgetPollItem: React.FC<{
   const isSelected = !!result.find(
     (result) => result.user === user && result.value === value
   );
-  const mainColor = isSelected ? "#a61e4d" : "#ced4da";
+  const mainColor = isSelected ? "#9c36b5" : "#ced4da";
 
   return (
     <PollWidgetPollItemContainer
