@@ -15,6 +15,7 @@ import AutocompleteUI from "../AutocompleteUI";
 import TodoListUI from "../ToDoListUI";
 import PollWidgetUI from "../PollWidgetUI";
 import Multi from "../Multi";
+import CarouselUI from "../CarouselUI";
 interface ComponentInterface {
   id: number;
   name: string;
@@ -31,6 +32,7 @@ const data = [
   { id: 8, name: "Todo List", component: TodoListUI },
   { id: 9, name: "Poll Widget", component: PollWidgetUI },
   { id: 10, name: "Multi", component: Multi },
+  { id: 12, name: "Carousel", component: CarouselUI },
 ];
 const AppUI = () => {
   const [selectedComponent, setSelectedComponent] = useState({
