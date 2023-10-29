@@ -3,7 +3,7 @@ import styled from "styled-components";
 export const MultiContainer = styled.div`
   display: flex;
   flex-direction: column;
-  gap: 12px;
+  gap: 24px;
 `;
 
 export const MultiButton = styled.div`
