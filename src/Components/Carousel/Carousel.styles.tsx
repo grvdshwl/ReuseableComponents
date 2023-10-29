@@ -28,6 +28,7 @@ export const CarouselRelativeContainer = styled.div`
   width: 1000px;
   height: 600px;
   position: relative;
+  box-shadow: 2px -1px 10px 2px rgba(0, 0, 0, 0.1);
 `;
 
 export const CarouselMainContainer: React.FC<{
