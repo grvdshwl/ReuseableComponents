@@ -15,6 +15,19 @@ export const CalculatorContainer = styled.div`
 export const CalculatorDisplayContainer = styled.div`
   width: 100%;
   height: 30%;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: end;
+  background: #212529;
+  padding: 20px;
+`;
+
+export const CalculatorDisplay = styled.p`
+  color: #fff;
+  font-size: 32px;
+  font-weight: 600;
+  letter-spacing: 0.5px;
 `;
 
 export const CalculatorButtonMainContainer = styled.div`
@@ -47,6 +60,7 @@ export const CalculatorButton: React.FC<{
   color?: string;
   inverted?: boolean;
   children: ReactNode;
+  onClick?: (value: string) => void;
 }> = styled.div`
   background: ${(props) => (!!props.inverted ? "#3bc9db" : "#212529")};
   border-radius: 12px;
@@ -56,6 +70,5 @@ export const CalculatorButton: React.FC<{
   justify-content: center;
   color: ${(props) => props.color ?? "#FFF"};
   font-size: 16px;
-  text-transform: capitalize;
   cursor: pointer;
 `;
