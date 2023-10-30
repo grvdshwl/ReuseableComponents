@@ -28,7 +28,7 @@ const Calculator = () => {
   const calculateResult = () => {
     try {
       const sanitizedExpression = input.replace(/\b0+(\d+)/g, "$1");
-      const result = eval(sanitizedExpression).toFixed(2);
+      const result = Math.round(eval(sanitizedExpression) * 100) / 100;
       setInput(result.toString());
     } catch (error) {
       setInput("Error");
