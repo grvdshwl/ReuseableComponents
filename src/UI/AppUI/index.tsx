@@ -17,6 +17,7 @@ import PollWidgetUI from "../PollWidgetUI";
 import Multi from "../Multi";
 import CarouselUI from "../CarouselUI";
 import CalculatorUI from "../CalculatorUI";
+import DigitalClockUI from "../DigitalClockUI";
 interface ComponentInterface {
   id: number;
   name: string;
@@ -35,6 +36,7 @@ const data = [
   { id: 10, name: "Multi", component: Multi },
   { id: 12, name: "Carousel", component: CarouselUI },
   { id: 13, name: "Calculator", component: CalculatorUI },
+  { id: 14, name: "Digital Clock", component: DigitalClockUI },
 ];
 const AppUI = () => {
   const [selectedComponent, setSelectedComponent] = useState({
