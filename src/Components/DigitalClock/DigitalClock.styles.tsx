@@ -8,7 +8,7 @@ export const DigitalClockContainer = styled.div`
 `;
 
 export const DigitalClockInnerContainer = styled.div`
-  width: 280px;
+  width: 250px;
   height: 90px;
   background: #000;
   display: flex;
@@ -23,7 +23,7 @@ export const DigitalClockInnerContainer = styled.div`
 export const DigitalClockTime = styled.div`
   color: #51cf66;
   font-size: 36px;
-  letter-spacing: 2px;
+  letter-spacing: 1px;
   font-family: "Orbitron", sans-serif;
   align-self: end;
 `;

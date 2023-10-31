@@ -1,24 +1,12 @@
-import styled from "styled-components";
 import Calculator from "../../Components/Calculator";
-export const CalculatorUITitle = styled.p`
-  font-size: 24px;
-  color: #262626;
-  font-weight: 600;
-  text-align: center;
-`;
-
-export const CalculatorUIWrapper = styled.div`
-  display: flex;
-  flex-direction: column;
-  gap: 20px;
-`;
+import { CommonTitle, CommonWrapper } from "../AppUI/App.styles";
 
 const CalculatorUI = () => {
   return (
-    <CalculatorUIWrapper>
-      <CalculatorUITitle>Calculator</CalculatorUITitle>
+    <CommonWrapper>
+      <CommonTitle>Calculator</CommonTitle>
       <Calculator />
-    </CalculatorUIWrapper>
+    </CommonWrapper>
   );
 };
 

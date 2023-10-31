@@ -61,3 +61,16 @@ export const Loader = styled.div`
     }
   }
 `;
+
+export const CommonTitle = styled.p`
+  font-size: 24px;
+  color: #262626;
+  font-weight: 600;
+  text-align: center;
+`;
+
+export const CommonWrapper = styled.div`
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+`;
