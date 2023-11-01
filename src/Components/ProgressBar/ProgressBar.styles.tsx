@@ -31,6 +31,7 @@ export const ProgressBarFill = styled.div<ProgressBarFillProps>`
   width: ${({ progress }) => `${progress}%`};
   animation: ${({ progress, animate }) => animate && fillAnimation(progress)} 2s
     ease-in-out none;
+  border-radius: 12px;
 `;
 
 export const ProgressBarTitle = styled.p`

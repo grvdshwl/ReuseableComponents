@@ -1,4 +1,4 @@
-import { useEffect, useState } from "react";
+import { useEffect, useLayoutEffect, useState } from "react";
 import {
   AnalogClockCentre,
   AnalogClockContainer,
@@ -32,7 +32,7 @@ const AnalogClock = () => {
     });
   };
 
-  useEffect(() => {
+  useLayoutEffect(() => {
     setTimeRotation();
     const intervalId = setInterval(setTimeRotation, 1000);
 

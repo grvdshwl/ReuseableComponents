@@ -17,7 +17,7 @@ const ProgressBarUI = () => {
   return (
     <ProgressBarUIWrapper>
       <ProgressBarUITitle>Progress Bar</ProgressBarUITitle>
-      <ProgressBar progress={65} />
+      <ProgressBar progress={75} />
     </ProgressBarUIWrapper>
   );
 };
