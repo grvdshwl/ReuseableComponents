@@ -19,6 +19,7 @@ import CarouselUI from "../CarouselUI";
 import CalculatorUI from "../CalculatorUI";
 import DigitalClockUI from "../DigitalClockUI";
 import DebounceUI from "../DebounceUI";
+import ThrottleUI from "../ThrottleUI";
 interface ComponentInterface {
   id: number;
   name: string;
@@ -39,6 +40,7 @@ const data = [
   { id: 13, name: "Calculator", component: CalculatorUI },
   { id: 14, name: "Digital Clock", component: DigitalClockUI },
   { id: 15, name: "Debounce", component: DebounceUI },
+  { id: 16, name: "Throttle", component: ThrottleUI },
 ];
 const AppUI = () => {
   const [selectedComponent, setSelectedComponent] = useState({
