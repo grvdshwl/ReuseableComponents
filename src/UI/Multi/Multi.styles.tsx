@@ -1,3 +1,4 @@
+import { BsQuestion } from "react-icons/bs";
 import styled from "styled-components";
 
 export const MultiContainer = styled.div`
@@ -35,4 +36,19 @@ export const MultiModalContent = styled.div`
 export const MultiModalContentTitle = styled.p`
   text-align: center;
   font-weight: 600;
+`;
+
+export const MultiToolTipContent = styled.p`
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  
+`;
+export const MultiToolTipButton = styled(BsQuestion)`
+  font-size: 32px;
+  text-align: center;
+  background: #262626;
+  color: #fff;
+  border-radius: 50%;
 `;

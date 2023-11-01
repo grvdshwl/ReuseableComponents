@@ -5,8 +5,11 @@ import {
   MultiContainer,
   MultiModalContent,
   MultiModalContentTitle,
+  MultiToolTipButton,
+  MultiToolTipContent,
 } from "./Multi.styles";
 import Modal from "../../Components/Modal/Modal";
+import Tooltip from "../../Components/Tooltip";
 
 const Multi = () => {
   const duration = 2000;
@@ -37,6 +40,12 @@ const Multi = () => {
   };
   return (
     <MultiContainer>
+      <MultiToolTipContent>
+        <Tooltip text="I am tooltip">
+          <MultiToolTipButton />
+        </Tooltip>
+      </MultiToolTipContent>
+
       <MultiButton onClick={handleToast} color="#22b8cf">
         Toast
       </MultiButton>
