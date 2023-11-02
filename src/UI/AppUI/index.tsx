@@ -20,7 +20,6 @@ import CalculatorUI from "../CalculatorUI";
 import DigitalClockUI from "../DigitalClockUI";
 import DebounceUI from "../DebounceUI";
 import ThrottleUI from "../ThrottleUI";
-import IntersectionObserverDemo from "../../Components/InfiniteScroll";
 import InfinitScrollUI from "../InfiniteScrollUI";
 interface ComponentInterface {
   id: number;
