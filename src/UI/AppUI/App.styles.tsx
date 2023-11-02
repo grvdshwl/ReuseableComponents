@@ -17,6 +17,7 @@ export const AppWrapperNavigation = styled.div`
   gap: 8px;
   padding-top: 24px;
   box-shadow: 1px -2px 6px 2px rgba(0, 0, 0, 0.05);
+  overflow: scroll;
 `;
 
 export const AppWrapperNavigationBar: React.FC<{
@@ -42,6 +43,7 @@ export const AppUIComponentWrapper = styled.div`
   flex-direction: row;
   margin-top: 50px;
   justify-content: center;
+  overflow: scroll;
 `;
 
 export const Loader = styled.div`

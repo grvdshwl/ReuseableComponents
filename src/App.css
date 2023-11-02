@@ -6,3 +6,15 @@ body, *{
 }
 
 
+
+.hide-scroll-bar::-webkit-scrollbar {
+  display: none;
+}
+
+
+.slide-animation {
+  transform: translateX(0) !important;
+  opacity: 1 !important;
+}
+
+

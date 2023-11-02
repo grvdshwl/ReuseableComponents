@@ -20,6 +20,8 @@ import CalculatorUI from "../CalculatorUI";
 import DigitalClockUI from "../DigitalClockUI";
 import DebounceUI from "../DebounceUI";
 import ThrottleUI from "../ThrottleUI";
+import IntersectionObserverDemo from "../../Components/InfiniteScroll";
+import InfinitScrollUI from "../InfiniteScrollUI";
 interface ComponentInterface {
   id: number;
   name: string;
@@ -41,6 +43,11 @@ const data = [
   { id: 14, name: "Digital Clock", component: DigitalClockUI },
   { id: 15, name: "Debounce", component: DebounceUI },
   { id: 16, name: "Throttle", component: ThrottleUI },
+  {
+    id: 17,
+    name: "Infinite Scroll",
+    component: InfinitScrollUI,
+  },
 ];
 const AppUI = () => {
   const [selectedComponent, setSelectedComponent] = useState({
@@ -53,7 +60,7 @@ const AppUI = () => {
   };
   return (
     <AppWrapper>
-      <AppWrapperNavigation>
+      <AppWrapperNavigation className="hide-scroll-bar">
         {data.map((component) => (
           <AppWrapperNavigationBar
             key={component.id}
@@ -64,7 +71,7 @@ const AppUI = () => {
           </AppWrapperNavigationBar>
         ))}
       </AppWrapperNavigation>
-      <AppUIComponentWrapper>
+      <AppUIComponentWrapper className="hide-scroll-bar">
         {React.createElement(selectedComponent.component)}
       </AppUIComponentWrapper>
     </AppWrapper>
