@@ -43,7 +43,6 @@ export const MultiToolTipContent = styled.p`
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  
 `;
 export const MultiToolTipButton = styled(BsQuestion)`
   font-size: 32px;

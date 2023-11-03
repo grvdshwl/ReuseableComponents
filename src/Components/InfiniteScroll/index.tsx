@@ -35,7 +35,7 @@ const InfiniteScroll = () => {
       infiniteScrollAnimationObserver.disconnect();
       lastCardObserver.disconnect();
     };
-  });
+  }, [cardList]);
 
   return (
     <InfiniteScrollContainer>

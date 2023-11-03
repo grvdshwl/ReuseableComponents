@@ -70,7 +70,10 @@ const AppUI = () => {
           </AppWrapperNavigationBar>
         ))}
       </AppWrapperNavigation>
-      <AppUIComponentWrapper className="hide-scroll-bar">
+      <AppUIComponentWrapper
+        className="hide-scroll-bar"
+        scroll={selectedComponent.id === 17}
+      >
         {React.createElement(selectedComponent.component)}
       </AppUIComponentWrapper>
     </AppWrapper>

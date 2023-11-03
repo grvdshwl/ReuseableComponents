@@ -37,13 +37,17 @@ export const AppWrapperNavigationBar: React.FC<{
   }
 `;
 
-export const AppUIComponentWrapper = styled.div`
+export const AppUIComponentWrapper: React.FC<{
+  scroll: boolean;
+  children: ReactNode;
+  className: string;
+}> = styled.div`
   width: 100%;
   display: flex;
   flex-direction: row;
   margin-top: 50px;
   justify-content: center;
-  overflow: scroll;
+  overflow: ${(props) => (props.scroll ? "scroll" : "none")};
 `;
 
 export const Loader = styled.div`
