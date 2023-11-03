@@ -21,6 +21,7 @@ import DigitalClockUI from "../DigitalClockUI";
 import DebounceUI from "../DebounceUI";
 import ThrottleUI from "../ThrottleUI";
 import InfinitScrollUI from "../InfiniteScrollUI";
+import TabsNavigationUI from "../TabNavigationUI";
 interface ComponentInterface {
   id: number;
   name: string;
@@ -47,6 +48,7 @@ const data = [
     name: "Infinite Scroll",
     component: InfinitScrollUI,
   },
+  { id: 18, name: "Tabs Navigation", component: TabsNavigationUI },
 ];
 const AppUI = () => {
   const [selectedComponent, setSelectedComponent] = useState({

@@ -129,3 +129,27 @@ export const cityData =[
     {id:"5",url:"https://images.unsplash.com/photo-1534447677768-be436bb09401?auto=format&fit=crop&q=80&w=2988&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"}
   ]
  
+  export const tabData = [
+    {
+      id: 1,
+      title: 'Traveling to Paris',
+      author: 'John Doe',
+      date: 'October 15, 2023',
+      content: `Paris, the City of Love, is a dream destination for many travelers. In this article, we explore the best places to visit in Paris, from the iconic Eiffel Tower to the charming Montmartre neighborhood.`,
+    },
+    {
+      id: 2,
+      title: 'Cooking French Cuisine',
+      author: 'Jane Smith',
+      date: 'October 20, 2023',
+      content: `French cuisine is renowned for its delicious flavors and exquisite recipes. Learn how to cook classic French dishes like Coq au Vin and Ratatouille in this culinary journey through the heart of France.`,
+    },
+    {
+      id: 3,
+      title: 'Exploring Parisian Art',
+      author: 'Emily Johnson',
+      date: 'October 25, 2023',
+      content: `Paris has a rich artistic history. Dive into the world of art and culture by visiting world-famous museums like the Louvre and Musée d'Orsay. Discover the masterpieces that define Parisian art.`,
+    },
+  ];
+  
